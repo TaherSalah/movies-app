@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row py-5 my-5">
+        <h4 class="h2 hPersons text-center py-4">Tranding TV</h4>
+        <div *ngFor="let displayMov of displayTv" class="col-md-4">
+            <a [routerLink]="['/movieDetails', displayMov.id]">
+                <img class="w-100 imgPersone mb-3" [src]="imgPrefex + displayMov.poster_path" />
+                <p class="namePerson text-center py-md-2">{{ displayMov.name }}</p>
+            </a>
+            <div class="rating text-center mb-4">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+        </div>
+    </div>
+</div>

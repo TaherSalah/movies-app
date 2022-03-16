@@ -1,0 +1,11 @@
+<div class="container">
+    <div class="row py-5 my-5">
+        <h4 class="h2 hPersons text-center py-4 mb-5">Tranding Persons</h4>
+        <div *ngFor="let displayprson of displayPerson" class="col-md-4 py-4">
+            <a [routerLink]="['/movieDetails', displayprson.id]">
+                <img class="w-100 imgPersone" [src]="imgPrefex + displayprson.profile_path" />
+                <h3 class="h5 namePerson py-md-3 text-center mt-2">{{ displayprson.name }}</h3>
+            </a>
+        </div>
+    </div>
+</div>

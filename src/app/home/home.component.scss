@@ -1,0 +1,53 @@
+.movie {
+    position: relative;
+}
+
+.vote {
+    background-color: #24baef;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 15px;
+    color: rgb(41, 6, 74);
+    font-weight: 600;
+}
+
+.hs4 {
+    line-height: 40px;
+}
+
+.border {
+    height: 1px;
+    background-color: #3b3b47;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    transition: all 0.5s linear;
+    border-radius: 30px;
+}
+
+.h4 {
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.h4:hover {
+    color: burlywood;
+}
+
+.desc {
+    font-size: 10px;
+}
+
+.namePerson {
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    transition: all 0.5s linear;
+}

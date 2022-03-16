@@ -1,0 +1,23 @@
+<div class="container">
+    <h1 class="text-center hlogIn my-4 py-5">Login Now</h1>
+
+    <div *ngIf="error" class="alret alert-danger text-break p-3  w-100">
+        <h3 class="text-center h5">{{error}}</h3>
+
+    </div>
+    <form [formGroup]="loginForm" class="text-center my-3" (ngSubmit)="submitLogIn(loginForm)">
+        <label class="my-2 labalInput" for="email">E-mail</label>
+        <input formControlName="email" id="email" class="form-control text-center my-3 w-50 m-auto" type="email">
+        <div *ngIf="loginForm.get('email')?.errors && loginForm.get('email')?.touched " class="alert alert-danger my-3">
+            <p *ngIf="loginForm.get('email')?.errors?.['required']">email is Required</p>
+            <p *ngIf="loginForm.get('email')?.errors?.['email']">email invaild</p>
+        </div>
+        <label class="my-2 labalInput" for="password">Password</label>
+        <input formControlName="password" id="password" class="form-control text-center my-3 w-50 m-auto" type="password">
+        <div *ngIf="loginForm.get('password')?.errors && loginForm.get('password')?.touched" class="alert alert-danger my-3">
+            <p *ngIf="loginForm.get('password')?.errors?.['required']">password is Required</p>
+            <p *ngIf="loginForm.get('password')?.errors?.['pattern']">password con A-Z a-z 123 @</p>
+        </div>
+        <button type="submit" class="btn btn-outline-danger text-center my-3">Submit Login</button>
+    </form>
+</div>

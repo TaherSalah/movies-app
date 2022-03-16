@@ -1,0 +1,45 @@
+    header {
+        height: 100vh;
+        background-image: url(../../assets/image/header.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .hed {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .h2Head {
+        font: {
+            size: 60px;
+            weight: 500;
+            family: 'Anton', sans-serif;
+            line-height: 40px;
+            letter-spacing: 40px;
+        }
+    }
+
+    .moviesSpan {
+        color: #000000;
+    }
+
+    .iconFilm {
+        color: #7502d9;
+    }
+
+    @media only screen and (min-width: 984px) {
+        .titleTranding {
+            margin-bottom: 90px !important;
+        }
+        .h2Head {
+            letter-spacing: 8px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .titleTranding {
+            margin-bottom: 40px !important;
+        }
+    }

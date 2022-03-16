@@ -1,0 +1,33 @@
+                        header {
+                            height: 100vh;
+                            background-position: center center;
+                            background-size: cover;
+                        }
+
+                        .notContent {
+                            margin-top: 80px;
+                            margin-left: 50px;
+                        }
+
+                        .notContent img {
+                            width: 60%;
+                            border-radius: 50px;
+                        }
+
+                        .notContent h2 {
+                            font-family: 'Anton', sans-serif !important;
+                            cursor: pointer;
+                            font-size: 35px !important;
+                            letter-spacing: 4px;
+                            line-height: 60px;
+                        }
+
+                        @media only screen and (max-width: 600px) {
+                            .notContent img {
+                                width: 100%;
+                                margin-top: 30px;
+                                text-align: center;
+                                margin-left: -40px;
+                                line-height: 30px;
+                            }
+                        }

@@ -1,0 +1,84 @@
+<app-header [headerTrandingMovie]="getMovie"></app-header>
+
+<!-------------------------------------------------Start Tranding Movie------------------------------------------------------------->
+<div class="container">
+    <div class="row py-5">
+        <div class="col-md-3">
+            <div class="content">
+                <div class="border w-50 mb-3"></div>
+                <h3 class="hs4 py-3">
+                    Trending Movies <br /> To Watch Right Now
+                </h3>
+                <p class="text-muted py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae modi reprehenderit. Mollitia, fuga similique?
+                </p>
+                <div class="border w-100 mt-3"></div>
+            </div>
+        </div>
+        <div *ngFor="let movie of getMovie" class="col-md-3">
+            <div class="movie">
+                <a [routerLink]="['/movieDetails', movie.id]">
+                    <img class="w-100" [src]="imgPrefex + movie.poster_path" />
+                    <h3 class="h4 py-4">{{ movie.title }}</h3>
+                    <p class="desc">{{ movie.overview }}</p>
+                </a>
+                <!-- <div class="vote text-center">{{ movie.vote_average }}</div> -->
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------ENd Tranding Movie------------------------------------------------------------->
+
+    <!-------------------------------------------------Start Tranding TV-------------------------------------------------------------->
+    <div class="row py-5">
+        <div class="col-md-3">
+            <div class="content">
+                <div class="border w-50 mb-3"></div>
+                <h3 class="hs4 py-3">
+                    Trending TV <br /> To Watch Right Now
+                </h3>
+                <p class="text-muted py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae modi reprehenderit. Mollitia, fuga similique?
+                </p>
+                <div class="border w-100 mt-3"></div>
+            </div>
+        </div>
+        <div *ngFor="let tv of getTv" class="col-md-3">
+            <div class="movie">
+                <a [routerLink]="['/movieDetails', tv.id]">
+                    <img class="w-100" [src]="imgPrefex + tv.poster_path" />
+                    <h3 class="h4 py-4 namePerson text-center ">{{ tv.name }}</h3>
+                    <p class="desc">{{ tv.overview }}</p>
+                </a>
+                <!-- <div class="vote text-center">{{ tv.vote_average }}</div> -->
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------End Tranding TV------------------------------------------------------------->
+
+    <!-------------------------------------------------Start Tranding persone------------------------------------------------------------->
+
+    <div class="row py-5">
+        <div class="col-md-3">
+            <div class="content">
+                <div class="border w-50 mb-3"></div>
+                <h3 class="hs4 py-3">
+                    Trending Persone <br /> To Watch Right Now
+                </h3>
+                <p class="text-muted py-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quae modi reprehenderit. Mollitia, fuga similique?
+                </p>
+                <div class="border w-100 mt-3"></div>
+            </div>
+        </div>
+        <div *ngFor="let persone of getPerson" class="col-md-3">
+            <div class="movie">
+                <a [routerLink]="['/movieDetails', persone.id]">
+                    <img class="w-100" [src]="imgPrefex + persone.profile_path" />
+                    <h3 class="h4 py-3 text-center namePerson ">{{ persone.name }}</h3>
+                </a>
+                <!-- <div class="vote text-center">{{ tv.vote_average }}</div> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------------End Tranding persone------------------------------------------------------------->

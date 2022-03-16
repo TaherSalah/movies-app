@@ -1,0 +1,29 @@
+    .h1Register {
+        font-size: 40px;
+        font-weight: 700;
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing: 10px;
+        cursor: pointer;
+        transition: all 0.5s linear;
+    }
+
+    .h1Register:hover {
+        transform: translateY(-8px) !important;
+        color: #7502D9;
+    }
+
+    .labalInput {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .form-control {
+        border: 2px solid #ff523b;
+        ;
+    }
+
+    input {
+        width: 50%;
+        margin: auto;
+    }
+    /**/

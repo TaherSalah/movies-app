@@ -1,0 +1,53 @@
+.hPersons {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 10px;
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.hPersons:hover {
+    transform: translateY(-8px);
+    color: #7502D9;
+}
+
+.namePerson {
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    transition: all 0.5s linear;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+    color: rgb(255, 187, 1);
+    margin-bottom: 20px;
+}
+
+.namePerson:hover {
+    color: burlywood;
+}
+
+.imgPersone {
+    border-radius: 30px;
+    transition: all 0.6s linear;
+}
+
+.imgPersone:hover {
+    transform: rotateY(20deg);
+}
+
+@media only screen and (max-width: 600px) {
+    .namePerson {
+        margin-top: 40px !important;
+        font-size: 25px !important;
+    }
+    .rating {
+        text-align: center !important;
+        margin-top: 20px;
+    }
+    .imgPersone {
+        margin-bottom: 18px;
+    }
+}

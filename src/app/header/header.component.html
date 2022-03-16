@@ -1,0 +1,21 @@
+<header class="d-flex align-items-end">
+    <div class="container">
+        <div class="titleTranding">
+            <h3 class="h2Head my-5 text-center">Tranding <span class="moviesSpan">M <span class="iconFilm"><i class="fa-solid fa-film"></i></span> vies</span>
+            </h3>
+        </div>
+        <div class="row">
+        </div>
+        <div class="col-md-11">
+            <div class="slider pb-5 mb-5">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-container *ngFor="let movies of headerTrandingMovie">
+                        <ng-template carouselSlide [id]="movies.id">
+                            <img class="w-100" [src]="imgPrefex + movies.poster_path" />
+                        </ng-template>
+                    </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</header>
